@@ -176,7 +176,6 @@
         <a class="text-3xl cursor-pointer flex justify-end p-6" onclick="closeMenu()">&times;</a>
         <div class="flex flex-col items-center gap-6 pt-10">
             <a href="#" onclick="closeMenu();navigate('home')" class="text-2xl font-serif font-custom">Home</a>
-            <a href="#" onclick="closeMenu();navigate('menu')" class="text-2xl font-serif font-custom">Menu</a>
             <a href="#" onclick="closeMenu();navigate('about')" class="text-2xl font-serif font-custom">About</a>
             <a href="#" onclick="closeMenu();navigate('blog')" class="text-2xl font-serif font-custom">The Menu</a>
             <a href="#" onclick="closeMenu();navigate('store')" class="text-2xl font-serif font-custom">The Kitchen</a>
@@ -1003,8 +1002,10 @@
             buildUrl(ep, params = {}) {
                 let url;
                 if (this.isCrossOrigin()) {
-                    url = new URL('/store-proxy/' + CONFIG.STORE_ID + '/', window.location.origin);
-                    url.searchParams.set('target_base', CONFIG.API_BASE);
+                    //url = new URL('/store-proxy/' + CONFIG.STORE_ID + '/', window.location.origin);
+                    //url.searchParams.set('target_base', CONFIG.API_BASE);
+                    url = new URL(CONFIG.API_BASE + '/' + CONFIG.STORE_ID + '/', window.location.origin);
+
                 } else {
                     url = new URL(CONFIG.API_BASE + '/' + CONFIG.STORE_ID + '/', window.location.origin);
                 }
