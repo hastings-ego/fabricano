@@ -181,8 +181,6 @@
             <a href="#" onclick="closeMenu();navigate('about')" class="text-2xl font-serif font-custom">About</a>
             <a href="#" onclick="closeMenu();navigate('blog')" class="text-2xl font-serif font-custom">The Menu</a>
             <a href="#" onclick="closeMenu();navigate('menu')" class="text-2xl font-serif font-custom">The Kitchen</a>
-            <a href="#" onclick="closeMenu();navigate('catering')" class="text-2xl font-serif font-custom">Catering</a>
-            <a href="#" onclick="closeMenu();navigate('faq')" class="text-2xl font-serif font-custom">FAQ</a>
             <a href="#" onclick="closeMenu();navigate('contact')" class="text-2xl font-serif font-custom">Contact</a>
             <a href="#" onclick="closeMenu();navigate('account')" class="text-2xl font-serif font-custom">Account</a>
             <p class="text-[9px] text-frost mt-16">Powered by VARSITYMARKET <span class="font-bold">technologies</span>
@@ -578,65 +576,6 @@
         </div>
     </div>
 
-    <!-- ===== CATERING VIEW ===== -->
-    <div id="view-catering" class="view hidden pt-40 pb-40 px-6 max-w-4xl mx-auto">
-        <h1 class="font-serif text-5xl md:text-7xl font-custom text-ice mb-4">Catering</h1>
-        <p class="text-xl text-frost mb-12">Bring the chaos to your event. We cater parties, corporate events, weddings
-            (yes, really), and anything where people need to eat something unforgettable.</p>
-
-        <div class="space-y-6 mb-16">
-            <div
-                class="bg-surface border border-edge p-8 rounded-2xl flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
-                <div>
-                    <h3 class="text-lg font-bold text-ice mb-1">The Starter Pack</h3>
-                    <p class="text-frost text-sm">Up to 20 people. Smash burgers + loaded fries + drinks.</p>
-                </div>
-                <p class="text-2xl font-serif font-custom text-neon">R3,500</p>
-            </div>
-            <div
-                class="bg-surface border border-edge p-8 rounded-2xl flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
-                <div>
-                    <h3 class="text-lg font-bold text-ice mb-1">The Main Event</h3>
-                    <p class="text-frost text-sm">Up to 50 people. Full menu access + desserts + our DJ.</p>
-                </div>
-                <p class="text-2xl font-serif font-custom text-neon">R8,000</p>
-            </div>
-            <div
-                class="bg-surface border border-edge p-8 rounded-2xl flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
-                <div>
-                    <h3 class="text-lg font-bold text-ice mb-1">The Full Takeover</h3>
-                    <p class="text-frost text-sm">100+ people. Custom menu, live cooking station, branded setup.</p>
-                </div>
-                <p class="text-2xl font-serif font-custom text-neon">Custom Quote</p>
-            </div>
-        </div>
-
-        <form onsubmit="event.preventDefault(); alert('Catering request sent! We\'ll call you soon.');"
-            class="bg-surface border border-edge p-10 rounded-2xl space-y-4">
-            <h3 class="text-lg font-bold text-ice mb-2">Request a Quote</h3>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <input type="text" required placeholder="Your Name"
-                    class="w-full bg-deep border border-edge p-4 rounded-xl text-ice outline-none focus:border-frost transition-colors text-sm">
-                <input type="tel" required placeholder="Phone Number"
-                    class="w-full bg-deep border border-edge p-4 rounded-xl text-ice outline-none focus:border-frost transition-colors text-sm">
-            </div>
-            <input type="email" required placeholder="Email Address"
-                class="w-full bg-deep border border-edge p-4 rounded-xl text-ice outline-none focus:border-frost transition-colors text-sm">
-            <select
-                class="w-full bg-deep border border-edge p-4 rounded-xl text-frost outline-none focus:border-frost transition-colors text-sm">
-                <option value="">Select Package</option>
-                <option>The Starter Pack (20 ppl)</option>
-                <option>The Main Event (50 ppl)</option>
-                <option>The Full Takeover (100+)</option>
-            </select>
-            <textarea rows="4" placeholder="Tell us about your event..."
-                class="w-full bg-deep border border-edge p-4 rounded-xl text-ice outline-none focus:border-frost transition-colors text-sm resize-none"></textarea>
-            <button
-                class="w-full bg-ice text-void font-bold py-4 rounded-full hover:bg-frost transition-colors text-sm active:scale-[0.98]">Send
-                Request</button>
-        </form>
-    </div>
-
     <!-- ===== CONTACT VIEW ===== -->
     <div id="view-contact" class="view hidden pt-40 pb-40 px-6 max-w-4xl mx-auto">
         <h1 class="font-serif text-5xl md:text-7xl font-custom text-ice mb-4">Get In Touch</h1>
@@ -682,7 +621,6 @@
                     class="w-full bg-deep border border-edge p-4 rounded-xl text-frost outline-none focus:border-frost transition-colors text-sm">
                     <option>General Inquiry</option>
                     <option>Order Support</option>
-                    <option>Catering</option>
                     <option>Press & Media</option>
                     <option>Feedback</option>
                 </select>
@@ -710,8 +648,7 @@
             </div>
             <div class="bg-surface border border-edge p-8 rounded-2xl">
                 <h3 class="text-lg font-bold text-ice mb-2">Can I book for a private event?</h3>
-                <p class="text-frost text-sm">Absolutely. Check our <a href="#" onclick="navigate('catering')"
-                        class="text-neon underline">Catering page</a> for packages, or contact us for a custom quote.
+                <p class="text-frost text-sm">Absolutely. Contact us for a custom quote.
                 </p>
             </div>
             <div class="bg-surface border border-edge p-8 rounded-2xl">
